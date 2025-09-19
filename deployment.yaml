@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: flask-app-container
-        image: flask-app:latest # This will be the image we build locally
+        image: sonal04/flaskapp
         imagePullPolicy: IfNotPresent # Do not try to pull from a remote registry if image exists locally
         ports:
         - containerPort: 5000 # The port your Flask app listens on
